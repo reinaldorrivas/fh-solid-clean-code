@@ -1,0 +1,28 @@
+@import "../node_modules/modern-normalize/modern-normalize.css";
+
+:root {
+  --text: #f3f4f6;
+  --bg: #16171d;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg);
+  font-size: 1.6rem;
+}
+
+.main-container {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}

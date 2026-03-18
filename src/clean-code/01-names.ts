@@ -24,6 +24,8 @@ export const cleanCodeNames = (): void => {
   interface User {}
   class UserBase extends User {}
 
+  // * TypeScript Mixin
+
   type Constructor<T = {}> = new (...args: any[]) => T;
 
   function Client<T extends Constructor>(Base: T) {

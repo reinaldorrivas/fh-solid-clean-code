@@ -43,7 +43,7 @@ export const cleanCodeNames = (): void => {
   const elapsedDays: number = 23;
 
   // número de archivos en un directorio - number of files in directory
-  const filesQuantity: number = 33;
+  const filesQuantityInDirectory: number = 33;
 
   // primer nombre - first name
   const firstName: string = "Fernando";

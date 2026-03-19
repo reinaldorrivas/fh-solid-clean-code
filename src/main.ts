@@ -1,3 +1,4 @@
+import { cleanCodeNames } from "./clean-code/01-names";
 import "./style.css";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
@@ -5,3 +6,5 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */ `
     <h1>SOLID & Clean Code</h1>
   </div>
 `;
+
+cleanCodeNames();

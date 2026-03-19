@@ -1,23 +1,23 @@
 interface File {
   id: number;
-  willBeDeleted: boolean;
+  toDelete: boolean;
 }
 
 export const cleanCodeNames = (): void => {
   // Ejemplo
   // Archivos a evaluar - files to evaluate
   const filesToEvaluate: File[] = [
-    { id: 1, willBeDeleted: false },
-    { id: 2, willBeDeleted: false },
-    { id: 3, willBeDeleted: true },
-    { id: 4, willBeDeleted: false },
-    { id: 5, willBeDeleted: false },
-    { id: 7, willBeDeleted: true },
+    { id: 1, toDelete: false },
+    { id: 2, toDelete: false },
+    { id: 3, toDelete: true },
+    { id: 4, toDelete: false },
+    { id: 5, toDelete: false },
+    { id: 7, toDelete: true },
   ];
 
   // Archivos marcados para borrar - files to delete
   const filesToDelete: File[] = filesToEvaluate.filter(
-    (fileToEvaluate) => fileToEvaluate.willBeDeleted,
+    (fileToEvaluate) => fileToEvaluate.toDelete,
   );
 
   abstract class User {}

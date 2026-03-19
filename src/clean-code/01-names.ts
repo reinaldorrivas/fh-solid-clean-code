@@ -1,23 +1,23 @@
 interface File {
   id: number;
-  fileToDelete: boolean;
+  isMarkedForDeletion: boolean;
 }
 
 export const cleanCodeNames = (): void => {
   // Ejemplo
   // Archivos a evaluar - files to evaluate
   const filesToEvaluate: File[] = [
-    { id: 1, fileToDelete: false },
-    { id: 2, fileToDelete: false },
-    { id: 3, fileToDelete: true },
-    { id: 4, fileToDelete: false },
-    { id: 5, fileToDelete: false },
-    { id: 7, fileToDelete: true },
+    { id: 1, isMarkedForDeletion: false },
+    { id: 2, isMarkedForDeletion: false },
+    { id: 3, isMarkedForDeletion: true },
+    { id: 4, isMarkedForDeletion: false },
+    { id: 5, isMarkedForDeletion: false },
+    { id: 7, isMarkedForDeletion: true },
   ];
 
   // Archivos marcados para borrar - files to delete
   const filesToDelete: File[] = filesToEvaluate.filter(
-    (fileToEvaluate) => fileToEvaluate.fileToDelete,
+    (fileToEvaluate) => fileToEvaluate.isMarkedForDeletion,
   );
 
   abstract class User {}
